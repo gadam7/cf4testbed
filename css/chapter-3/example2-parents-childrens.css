@@ -1,0 +1,48 @@
+img {
+  width: 800px;
+  height: auto;
+}
+
+ul > li {
+  color: red;
+  border: 1px solid blue;
+  width: 200px;
+}
+
+ul a:link {
+  color: green;
+}
+
+ul a:visited {
+  color: blueviolet;
+}
+
+ul > li:first-child {
+  background-color: aquamarine;
+  color: rgb(76, 0, 255);
+}
+
+ul > li:not(:first-child) {
+  background-color: antiquewhite;
+  color: rgb(26, 133, 19);
+}
+
+img ~ p, i {
+  background-color: green;
+}
+
+h1 + p, i {
+  color: white;
+}
+
+a:before {
+  content: '\1F604';
+}
+
+a:after {
+  content: '\1F603';
+}
+
+img:after {
+  content: '';
+}

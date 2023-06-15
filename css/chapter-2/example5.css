@@ -1,0 +1,24 @@
+* {
+  margin: 10px 2px;
+}
+
+.container > h2:first-of-type {
+  font-size: 24px;
+  color: red;
+}
+
+.container > p:first-of-type {
+  color: blue;
+}
+
+ul > :first-child {
+  font-weight: bold;
+}
+
+ul > :nth-child(odd) {
+  color: red;
+}
+
+ul > :nth-child(even) {
+  color: blue;
+}

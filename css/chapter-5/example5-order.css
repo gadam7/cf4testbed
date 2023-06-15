@@ -1,0 +1,62 @@
+.container {
+  width: 250px;
+  height: 500px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div[class^=box] {
+  width: 60px;
+  height: 50px;
+  background-color: aqua;
+  text-align: center;
+  line-height: 50px;
+}
+
+.box1 {
+  order: 2;
+}
+
+.box2 {
+  order: 3;
+  align-self: flex-start;
+}
+
+.box3 {
+  order: 1;
+  align-self: flex-end;
+}
+
+.box4 {
+  order: 4;
+  align-self: flex-end;
+}
+
+.box5 {
+  order: 5;
+}
+
+.box6 {
+  order: 6;
+  align-self: flex-start;
+}
+
+.box7 {
+  order: 7;
+  align-self: flex-end;
+}
+
+.box8 {
+  order: 8;
+}
+
+.box9 {
+  order: 9;
+  align-self: flex-start;
+}

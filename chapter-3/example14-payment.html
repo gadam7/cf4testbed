@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="../css/chapter-3/example14-payment.css">
+  <title>Example 14</title>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <h1>Payment Form</h1>
+      <p>
+        The fields with asterisk are obligated
+        <strong><abbr title="required">*</abbr></strong>
+      </p>
+      <div aria-labelledby="personal-details">
+        <h2 id="personal-details">Personal Information</h2>
+        <fieldset>
+          <legend>Title</legend>
+          <div>
+            <input 
+            type="radio" 
+            id="titleMr"
+            name="title"
+            value="Mr">
+            <label for="titleMr">Mr.</label>
+          </div>
+          <div>
+            <label>
+              <input 
+              type="radio" 
+              id="title"
+              name="title"
+              value="Mrs">
+              Mrs.
+            </label>
+          </div>
+          <div>
+            <label>
+              <input 
+              type="radio"
+              name="title"
+              value="Dr">
+              Dr.
+            </label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="name">
+            <span>Name:</span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="text" name="username" id="name">
+        </div>
+        <div>
+          <label for="mail">
+            <span>Email:</span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="email" name="useremail" id="mail">
+        </div>
+        <div>
+          <label for="pwd">
+            <span>Password:</span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="password" name="password" id="pwd">
+        </div>
+      </div>
+      <div aria-labelledby="payment-info">
+        <h2 id="payment-info">Payment Information</h2>
+
+        <div>
+          <label for="card">
+            <span>Card type:</span>
+          </label>
+          <select class="card" name="usercard" id="card">
+            <option selected disabled hidden>Choose card</option>
+            <option value="visa">Visa</option>
+            <option value="mc">Mastercard</option>
+            <option value="maestro">Maestro</option>
+            <option value="amexpress">American Express</option>
+          </select>
+        </div>
+        <div>
+          <label for="cardno">
+            <span>Card Number</span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="text" name="cardno" id="cardno">
+        </div>
+        <div>
+          <label for="expiration">
+            <span>Expiration date:</span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input 
+          type="text" 
+          name="expiration" 
+          id="expiration" 
+          placeholder="MM/YY">
+        </div>
+      </div>
+
+      <div class="button">
+        <input type="submit" value="Proceed to payment">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

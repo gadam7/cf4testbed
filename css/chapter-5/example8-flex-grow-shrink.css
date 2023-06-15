@@ -1,0 +1,28 @@
+.container {
+  width: 90%;
+  height: 10vh;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  display: flex;
+}
+
+.border-dark {
+  border: 1px solid brown;
+}
+
+.flex-item-1 {
+  flex: 0 0 200px;
+  background-color: aqua;
+}
+
+.flex-item-2 {
+  flex: 1 0 500px;
+  background-color: beige;
+}
+
+.flex-item-3 {
+  flex: 0 1 1000px;
+  background-color: brown;
+}

@@ -1,0 +1,39 @@
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas: 
+  "header header header header"
+  "main main . sidebar"
+  "x1 x1 x1 x1"
+  "footer footer footer footer";
+}
+
+div[class^="grid"] {
+  border: 1px solid red;
+}
+
+.grid-item-1 {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+.grid-item-2 {
+  grid-area: main;
+  background-color: lightgray;
+}
+
+.grid-item-3 {
+  grid-area: sidebar;
+  background-color: lightcoral;
+}
+
+.grid-item-3-1 {
+  grid-area: x1;
+  background-color: lightsalmon;
+}
+
+.grid-item-4 {
+  grid-area: footer;
+  background-color: lightgreen;
+}
